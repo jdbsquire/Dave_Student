@@ -5,31 +5,33 @@
 using namespace std;
 
 class Student {
-private:
-    string name;
-    string studentID;
-    string phone;
-    double gpa;
+    private:
+        string name;
+        string studentID;
+        string phone;
+        double gpa;
 
-    static double highestGPA;
+        static double highestGPA;
 
-public:
-    Student();
-    Student(const string& name, const string& id, const string& phone, double gpa);
+    public:
+        Student();
+        Student(const string& name, const string& id, const string& phone, double gpa);
 
-    // Getters
-    string getName() const;
-    string getStudentID() const;
-    string getPhone() const;
-    double getGPA() const;
+        // Getters
+        string getName() const;
+        string getStudentID() const;
+        string getPhone() const;
+        double getGPA() const;
 
-    // Setters
-    void setName(const string& n);
-    void setStudentID(const string& id);
-    void setPhone(const string& p);
-    void setGPA(double g);
+        // Setters
+        void setName(const string& n);
+        void setStudentID(const string& id);
+        void setPhone(const string& p);
+        void setGPA(double g);
 
-    static double getHighestGPA();
+        //Methods
+        static double getHighestGPA();
+        void outLine(const string&, int, const string&, double);
 };
 
 #endif
