@@ -62,8 +62,8 @@ void Student::setGPA(double g){
         highestGPA = g;
 }
 
-void outLine(const string& name, int studentID, 
-            string& phone, double gpa){
+void Student::outLine(const string& name, int studentID, 
+            const string& phone, double gpa){
                 cout 
                     << name << " " << studentID << " "
                     << phone << " " << gpa << "\n";
