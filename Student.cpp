@@ -15,24 +15,24 @@
 #include <string>
 #include <vector>
 
-double Student::highestGPA = 0.0;
+double Student::highestGPA = 0.0;//setting variable to 0.0
 
 using namespace std;
 
-Student::Student():name(""), studentID(""), phone(""), gpa(0.0) {}
+Student::Student():name(""), studentID(""), phone(""), gpa(0.0) {}//constructor set to null or 0
 
-Student::Student(const string& n, const string& id, const string & p, double g)
-                 : name(n), studentID(id), phone(p), gpa(g)
+Student::Student(const string& n, const string& id, const string & p, double g)//overridding the above method with constants
+                 : name(n), studentID(id), phone(p), gpa(g)//byref saves memory
     {
         if(g > highestGPA)
             highestGPA = g;
     }
 
-string Student::getName() const{
+string Student::getName() const{//casnnot change instanc4e variable for the class
     return name;
 }
 
-string Student::getStudentID() const{
+string Student::getStudentID() const{//alway7s constant in industry
     return studentID;
 }
 
@@ -60,6 +60,10 @@ void Student::setGPA(double g){
     gpa = g;
     if (g > highestGPA)
         highestGPA = g;
+}
+
+double Student::getHighestGPA() { 
+    return highestGPA; 
 }
 
 void Student::outLine(const string& name, int studentID, 

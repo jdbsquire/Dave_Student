@@ -11,7 +11,7 @@ class Student {
         string phone;
         double gpa;
 
-        static double highestGPA;
+        static double highestGPA;//class variable
 
     public:
         Student();
