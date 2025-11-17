@@ -39,7 +39,7 @@ int main() {
 
     /*********PREPARE THE DATA FOR PROCESSING**********/
     /**********************LINE************************/
-    //create a variable vector of the Student type called students
+    //create a vector called students that will hold Student objects!
     vector<Student> students;
     //create a string to receive each line of the file and parse it
     string line;
